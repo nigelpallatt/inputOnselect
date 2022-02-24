@@ -1,0 +1,47 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: #262626;
+}
+.container{
+    width: 100%;
+    height: 650px;
+    border: 1px solid;
+    padding: 10px;
+}
+
+input[type="radio"]{
+    width: 100px;
+    height: 112px;
+    border: 1px solid rgb(138, 131, 131);
+    display: inline-block;
+    -webkit-appearance: none;
+    margin-top: 15px;
+}
+input[type="radio"]:checked{border: 2px solid #00baff;}
+
+.display-image{
+    width: 400px;
+    height: 500px;
+    border: 1px solid white;
+    position: absolute;
+    top: 150px;
+    left: 25px;
+    background-size: contain;
+     background-repeat:no-repeat;
+     /* transition-duration: .5s; */
+}
+
+#one{background-image: url(shirt1ScaleExport.png);background-size:contain; background-repeat:no-repeat;
+}
+#two{background-image: url(shirtArmy54ScaleExport.png);background-size: contain; background-repeat:no-repeat;
+}
+#three{background-image: url(shirtArmyScaleExport.png);background-size: contain; background-repeat:no-repeat;
+}
+#four{background-image: url(shirtDesardScaleExport.png);background-size: contain; background-repeat:no-repeat;
+}
+
+#one:checked ~ .display-image{background-image: url(shirt1ScaleExport.png);}
+#two:checked ~ .display-image{background-image: url(shirtArmy54ScaleExport.png);}
+#three:checked ~ .display-image{background-image: url(shirtArmyScaleExport.png);}
+#four:checked ~ .display-image{background-image: url(shirtDesardScaleExport.png);}
